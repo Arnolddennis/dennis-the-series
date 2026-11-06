@@ -1,4 +1,4 @@
-/** Dennis David — content from his current portfolio and public project READMEs. */
+/** Dennis David — content updated from his supplied SRE résumé; other projects retain their existing details. */
 
 export type Palette = { from: string; via: string; to: string; accent: string };
 
@@ -65,16 +65,16 @@ export const profile = {
   "firstName": "DENNIS",
   "seriesTag": "THE SERIES",
   "originalLabel": "A DENNIS DAVID ORIGINAL",
-  "role": "Senior Cloud Engineer · Azure, DevOps & Site Reliability",
+  "role": "Site Reliability Engineer · Azure & DevOps",
   "tagline": [
     "Azure Cloud Engineering",
     "DevOps & Automation",
     "Site Reliability"
   ],
-  "intro": "I work where infrastructure, automation, and incident response meet—helping teams restore services and make the next incident easier to handle. Based in Kraków, with 8+ years across IT and engineering and experience with global teams.",
+  "intro": "I keep Azure and Linux production systems reliable through incident response, observability, and automation. I build alerts in Azure Monitor and Datadog, coordinate recovery through PagerDuty, and turn recurring incidents into documented, controlled recovery workflows. Based in Kraków, Poland.",
   "location": "Kraków, Poland",
   "email": "dennisdavid1991@gmail.com",
-  "phone": "",
+  "phone": "+48 787 793 194",
   "links": {
     "github": "https://github.com/Arnolddennis",
     "linkedin": "https://linkedin.com/in/arnolddennis"
@@ -83,19 +83,25 @@ export const profile = {
   "portrait": {
     "src": "/assets/portrait-720.webp",
     "srcSet": "/assets/portrait-420.webp 420w, /assets/portrait-720.webp 720w, /assets/portrait-1100.webp 1100w",
-    "alt": "Portrait of Dennis David"
+    "alt": "Dennis David wearing a grey suit and navy tie"
   },
   "interests": [
     "Reliable cloud platforms",
     "Incident response & observability",
     "Controlled recovery automation"
-  ]
+  ],
+  "workAuthorization": "Authorized to work in Poland",
+  "languages": [
+    "English — Fluent",
+    "Polish — Conversational (spoken B1)"
+  ],
+  "summary": "Senior Cloud Engineer specializing in Azure and Linux production operations, DevOps automation, incident response and observability. Hands-on with Azure Monitor, Datadog and PagerDuty in production: creating alerts from scratch, investigating service degradation, responding to incidents and restoring services. Experienced with Azure CLI, Bash, PowerShell, Log Analytics, Application Insights, Terraform/ARM/Bicep and Azure DevOps CI/CD pipelines. Supports Linux, Windows, AKS, applications and database workloads in enterprise environments."
 };
 
 export const education = [
   {
     "school": "Silesian University of Technology",
-    "place": "Poland",
+    "place": "Gliwice, Poland",
     "degree": "Master’s in Material Science Engineering",
     "period": "2019 – 2021",
     "score": ""
@@ -112,25 +118,29 @@ export const education = [
 export const experience = [
   {
     "company": "LTIMindtree",
-    "role": "Senior Cloud Engineer",
-    "place": "Kraków, Poland · Azure Monitoring & DevOps",
+    "role": "Senior Cloud Engineer — Azure Monitoring and DevOps",
+    "place": "Kraków, Poland",
     "period": "Apr 2024 — Present",
     "points": [
-      "Respond to L2/L3 incidents across VMs, App Services, AKS, and databases; correlate alerts, logs, and deployment changes to guide service restoration.",
-      "Execute Azure CLI diagnostics and resource changes during incidents and planned infrastructure updates.",
-      "Reduced manual incident-resolution effort by approximately 40% with Logic Apps, Azure Automation runbooks, PowerShell, and Bash.",
-      "Develop actionable alerts, dashboards, SOPs, and runbooks. Support Linux/Windows hardening, AKS troubleshooting, secure Terraform changes, and post-incident improvements."
+      "Provide enterprise L2/L3 production troubleshooting across Azure VMs, Linux/Windows systems, App Services, AKS, application dependencies and SQL workloads; investigate performance degradation, infrastructure faults and service availability incidents.",
+      "Build production metric and log alerts from scratch in Azure Monitor and Datadog; configure thresholds, evaluation windows, dashboards, notification routing and KQL-based queries to detect failures and reduce false positives.",
+      "Correlate system logs, KQL results, application telemetry, resource health, configuration changes and deployment events to identify likely fault domains and guide safe recovery under production pressure.",
+      "Deploy and maintain monitoring resources as code with Terraform and ARM/Bicep, including Azure alert rules, diagnostic settings and action groups; use Azure CLI, Bash and PowerShell for incident diagnostics and recovery.",
+      "Support Azure DevOps and GitHub CI/CD workflows: maintain YAML pipelines, troubleshoot build and release failures, validate infrastructure changes, and coordinate controlled deployment and rollback activities.",
+      "Reduced manual incident-resolution effort by approximately 40% through monitoring-driven runbooks and scripted remediation; maintained procedures and troubleshooting documentation for support handovers.",
+      "Troubleshoot Linux production hosts using service-status and system-log inspection, CPU/process analysis, memory and disk checks, SSH and network diagnostics; investigate AKS probes, ingress and scaling failures.",
+      "Respond to production alerts through PagerDuty: acknowledge incidents, assess customer impact, coordinate escalation and recovery with engineering teams, and verify service health before resolution."
     ]
   },
   {
     "company": "Concentrix",
-    "role": "Team Leader & IT Trainer",
+    "role": "Team Leader and IT Trainer",
     "place": "Katowice, Poland",
     "period": "Jun 2023 — Feb 2024",
     "points": [
-      "Coordinated technical support escalations across teams and customer stakeholders.",
-      "Defined performance metrics, quality standards, and targeted operational improvement plans.",
-      "Delivered technical training and reusable knowledge-base guidance for consistent troubleshooting."
+      "Coordinated escalated technical-support work and cross-team communication, maintaining service quality, operational metrics and timely issue ownership.",
+      "Defined quality standards and targeted improvement plans; contributed to a reported 92% improvement in customer-satisfaction scores.",
+      "Delivered technical training and wrote reusable support knowledge-base content, troubleshooting guidance and process documentation."
     ]
   },
   {
@@ -139,20 +149,20 @@ export const experience = [
     "place": "Katowice, Poland",
     "period": "Jun 2022 — Feb 2023",
     "points": [
-      "Supported Azure migrations involving IaaS/PaaS services, hybrid integration, and containerized workloads.",
-      "Provisioned and monitored infrastructure with Azure Monitor, Log Analytics, and platform alerts.",
-      "Collaborated on Docker/AKS troubleshooting and documented access models, connectivity diagnostics, and reusable support procedures."
+      "Supported cloud migration, Azure infrastructure and hybrid platform initiatives, including IaaS/PaaS components, requirements gathering and implementation coordination.",
+      "Configured Azure Monitor, Log Analytics and platform alerting to improve operational visibility; collaborated on Docker/AKS diagnostics and troubleshooting with engineering teams.",
+      "Documented RBAC/access, connectivity and application/infrastructure diagnostic procedures; communicated technical issues and project risks to stakeholders."
     ]
   },
   {
-    "company": "Fluidtech Engineers",
-    "role": "IT & Engineering Business Head",
-    "place": "Chennai, India · Fluidtech Engineers India Pvt. Ltd.",
+    "company": "Fluidtech Engineers India Pvt. Ltd.",
+    "role": "IT and Engineering Business Head",
+    "place": "Chennai, India",
     "period": "Feb 2014 — Dec 2018",
     "points": [
-      "Led cross-functional IT and engineering initiatives supporting industrial machinery, manufacturing, and customer projects.",
-      "Implemented equipment monitoring and dashboards for uptime, fault indicators, quality metrics, and production performance.",
-      "Coordinated software, firmware, HMI/SCADA, and MES/ERP changes, with backup and continuity procedures."
+      "Led technical operations and engineering projects supporting industrial equipment, manufacturing and customer environments.",
+      "Implemented telemetry and monitoring dashboards for equipment uptime, fault indicators and production performance; coordinated systems, software changes and backup/continuity procedures.",
+      "Prepared technical documentation and worked with engineering teams and suppliers to track requirements, resolve equipment issues and coordinate operational improvements."
     ]
   }
 ];
@@ -163,30 +173,31 @@ export const projects: Project[] = [
     "title": "Azure Self-Healing SRE Platform",
     "year": "Portfolio project",
     "genre": "Azure · SRE · Incident Automation",
-    "logline": "Observe. Orchestrate. Recover. Learn. An alert-to-remediation workflow for unhealthy Azure services, with scoped permissions and controlled recovery.",
+    "logline": "A portfolio project for controlled Azure workload recovery: alerts, runbooks, scoped permissions, and health checks in one reliability workflow.",
     "stack": [
-      "Azure Monitor",
       "Terraform",
+      "Azure Monitor",
+      "Application Insights",
+      "Log Analytics",
       "Logic Apps",
       "PowerShell",
       "Python",
       "Kubernetes",
-      "Flux",
       "Prometheus",
       "Grafana"
     ],
     "build": [
-      "Built a monitoring and remediation framework that routes Azure Monitor common-schema alerts through a Logic App to an Azure Automation PowerShell runbook.",
-      "Implemented managed identity, scoped RBAC, diagnostic logging, and Web App restart remediation.",
-      "Added Kubernetes health probes, autoscaling, Flux GitOps definitions, and Jenkins/GitHub Actions validation. Optional AI incident summaries retain a deterministic fallback."
+      "Designed an alert-to-runbook flow for controlled recovery of Azure workloads.",
+      "Defined infrastructure as code, managed identity, scoped RBAC, observability, and health checks.",
+      "Included CI validation and Kubernetes, Prometheus, and Grafana components."
     ],
     "features": [
-      "HTTP 5xx alert-to-remediation workflow",
+      "Controlled alert-to-runbook recovery",
       "Managed identity and scoped RBAC",
       "Terraform infrastructure definitions",
-      "Kubernetes probes and autoscaling",
-      "Prometheus and Grafana integration",
-      "Optional AI-assisted incident summaries"
+      "Application Insights and Log Analytics",
+      "Health checks and CI validation",
+      "Prometheus and Grafana visibility"
     ],
     "metrics": [
       {
@@ -198,8 +209,8 @@ export const projects: Project[] = [
         "label": "Terraform provisioning"
       },
       {
-        "value": "GitOps",
-        "label": "Flux reconciliation"
+        "value": "CI",
+        "label": "recovery workflow validation"
       },
       {
         "value": "RBAC",
@@ -443,6 +454,11 @@ export const skillCategories: SkillCategory[] = [
         "mono": "Dd"
       },
       {
+        "name": "PagerDuty",
+        "mono": "Pd",
+        "note": "On-call"
+      },
+      {
         "name": "Prometheus / Grafana",
         "mono": "Pg"
       },
@@ -454,6 +470,14 @@ export const skillCategories: SkillCategory[] = [
       {
         "name": "Root-Cause Analysis",
         "mono": "Rc"
+      },
+      {
+        "name": "Alert Engineering",
+        "mono": "Ae"
+      },
+      {
+        "name": "Azure Resource Health",
+        "mono": "Rh"
       }
     ]
   },
@@ -497,6 +521,10 @@ export const skillCategories: SkillCategory[] = [
       {
         "name": "Git",
         "mono": "Gt"
+      },
+      {
+        "name": "YAML Pipelines",
+        "mono": "Ya"
       }
     ]
   },
@@ -532,6 +560,10 @@ export const skillCategories: SkillCategory[] = [
       {
         "name": "SOPs & Runbooks",
         "mono": "Rb"
+      },
+      {
+        "name": "Entra ID",
+        "mono": "Id"
       }
     ]
   }
@@ -580,7 +612,7 @@ export const skillEvidence: Record<string, string[]> = {
     "Current portfolio · Signals & Response"
   ],
   "Datadog": [
-    "Current portfolio · Signals & Response"
+    "LTIMindtree · production monitors, thresholds, dashboards and alert routing"
   ],
   "Prometheus / Grafana": [
     "Current portfolio · Signals & Response"
@@ -639,6 +671,21 @@ export const skillEvidence: Record<string, string[]> = {
   ],
   "SOPs & Runbooks": [
     "Current portfolio · Security & Control"
+  ],
+  "PagerDuty": [
+    "LTIMindtree · production alert acknowledgement, incident coordination and escalation"
+  ],
+  "Alert Engineering": [
+    "LTIMindtree · Azure Monitor and Datadog metric/log alerts built from scratch"
+  ],
+  "Azure Resource Health": [
+    "LTIMindtree · resource health and deployment-event correlation"
+  ],
+  "YAML Pipelines": [
+    "LTIMindtree · Azure DevOps and GitHub CI/CD troubleshooting"
+  ],
+  "Entra ID": [
+    "Résumé · Azure cloud and troubleshooting"
   ]
 };
 
@@ -687,12 +734,12 @@ export const seasons: Season[] = [
     "number": 2,
     "title": "Industrial Systems & Leadership",
     "period": "Feb 2014 — Dec 2018",
-    "synopsis": "IT & Engineering Business Head · Fluidtech Engineers · Chennai, India · Fluidtech Engineers India Pvt. Ltd.",
+    "synopsis": "IT and Engineering Business Head · Fluidtech Engineers India Pvt. Ltd. · Chennai, India",
     "episodes": [
       {
         "code": "S02 E01",
-        "title": "IT & Engineering Business Head",
-        "description": "Led cross-functional IT and engineering initiatives supporting industrial machinery, manufacturing, and customer projects.",
+        "title": "IT and Engineering Business Head",
+        "description": "Led technical operations and engineering projects supporting industrial equipment, manufacturing and customer environments.",
         "tags": [
           "Fluidtech Engineers",
           "Engineering & Operations"
@@ -708,7 +755,7 @@ export const seasons: Season[] = [
       {
         "code": "S02 E02",
         "title": "Systems, People & Process",
-        "description": "Implemented equipment monitoring and dashboards for uptime, fault indicators, quality metrics, and production performance. Coordinated software, firmware, HMI/SCADA, and MES/ERP changes, with backup and continuity procedures.",
+        "description": "Implemented telemetry and monitoring dashboards for equipment uptime, fault indicators and production performance; coordinated systems, software changes and backup/continuity procedures. Prepared technical documentation and worked with engineering teams and suppliers to track requirements, resolve equipment issues and coordinate operational improvements.",
         "tags": [
           "Collaboration",
           "Continuous Improvement"
@@ -732,7 +779,7 @@ export const seasons: Season[] = [
       {
         "code": "S03 E01",
         "title": "IT Project Specialist",
-        "description": "Supported Azure migrations involving IaaS/PaaS services, hybrid integration, and containerized workloads.",
+        "description": "Supported cloud migration, Azure infrastructure and hybrid platform initiatives, including IaaS/PaaS components, requirements gathering and implementation coordination.",
         "tags": [
           "Capgemini",
           "Engineering & Operations"
@@ -748,7 +795,7 @@ export const seasons: Season[] = [
       {
         "code": "S03 E02",
         "title": "Systems, People & Process",
-        "description": "Provisioned and monitored infrastructure with Azure Monitor, Log Analytics, and platform alerts. Collaborated on Docker/AKS troubleshooting and documented access models, connectivity diagnostics, and reusable support procedures.",
+        "description": "Configured Azure Monitor, Log Analytics and platform alerting to improve operational visibility; collaborated on Docker/AKS diagnostics and troubleshooting with engineering teams. Documented RBAC/access, connectivity and application/infrastructure diagnostic procedures; communicated technical issues and project risks to stakeholders.",
         "tags": [
           "Collaboration",
           "Continuous Improvement"
@@ -767,12 +814,12 @@ export const seasons: Season[] = [
     "number": 4,
     "title": "Technical Leadership & Training",
     "period": "Jun 2023 — Feb 2024",
-    "synopsis": "Team Leader & IT Trainer · Concentrix · Katowice, Poland",
+    "synopsis": "Team Leader and IT Trainer · Concentrix · Katowice, Poland",
     "episodes": [
       {
         "code": "S04 E01",
-        "title": "Team Leader & IT Trainer",
-        "description": "Coordinated technical support escalations across teams and customer stakeholders.",
+        "title": "Team Leader and IT Trainer",
+        "description": "Coordinated escalated technical-support work and cross-team communication, maintaining service quality, operational metrics and timely issue ownership.",
         "tags": [
           "Concentrix",
           "Engineering & Operations"
@@ -788,7 +835,7 @@ export const seasons: Season[] = [
       {
         "code": "S04 E02",
         "title": "Systems, People & Process",
-        "description": "Defined performance metrics, quality standards, and targeted operational improvement plans. Delivered technical training and reusable knowledge-base guidance for consistent troubleshooting.",
+        "description": "Defined quality standards and targeted improvement plans; contributed to a reported 92% improvement in customer-satisfaction scores. Delivered technical training and wrote reusable support knowledge-base content, troubleshooting guidance and process documentation.",
         "tags": [
           "Collaboration",
           "Continuous Improvement"
@@ -807,12 +854,12 @@ export const seasons: Season[] = [
     "number": 5,
     "title": "Cloud Reliability & Automation",
     "period": "Apr 2024 — Present",
-    "synopsis": "Senior Cloud Engineer · LTIMindtree · Kraków, Poland · Azure Monitoring & DevOps",
+    "synopsis": "Senior Cloud Engineer — Azure Monitoring and DevOps · LTIMindtree · Kraków, Poland",
     "episodes": [
       {
         "code": "S05 E01",
         "title": "Senior Cloud Engineer",
-        "description": "Respond to L2/L3 incidents across VMs, App Services, AKS, and databases; correlate alerts, logs, and deployment changes to guide service restoration. Execute Azure CLI diagnostics and resource changes during incidents and planned infrastructure updates.",
+        "description": "Investigate Azure and Linux production incidents across VMs, App Services, AKS and SQL. Build Azure Monitor and Datadog alerts from scratch, correlate telemetry and resource health, and maintain monitoring as code with Terraform and ARM/Bicep.",
         "tags": [
           "LTIMindtree",
           "Engineering & Operations"
@@ -828,7 +875,7 @@ export const seasons: Season[] = [
       {
         "code": "S05 E02",
         "title": "Make the Next Incident Easier",
-        "description": "Reduced manual incident-resolution effort by approximately 40% with Logic Apps, Azure Automation runbooks, PowerShell, and Bash. Develop actionable alerts, dashboards, SOPs, and runbooks. Support Linux/Windows hardening, AKS troubleshooting, secure Terraform changes, and post-incident improvements.",
+        "description": "Coordinate PagerDuty acknowledgement, escalation and recovery. Troubleshoot Linux hosts, AKS and CI/CD pipelines; validate deployments and rollbacks. Reduced manual incident-resolution effort by approximately 40% through monitoring-driven runbooks and scripted remediation.",
         "tags": [
           "Automation",
           "Reliability"
@@ -963,7 +1010,7 @@ export const introSlides: IntroSlide[] = [
     "kicker": "The Engineer",
     "title": "Dennis David",
     "lines": [
-      "Senior Cloud Engineer · Kraków, Poland",
+      "Site Reliability Engineer · Kraków, Poland",
       "8+ years across IT and engineering"
     ],
     "chips": [
@@ -977,12 +1024,12 @@ export const introSlides: IntroSlide[] = [
     "title": "Restore. Then Improve.",
     "lines": [
       "LTIMindtree · Senior Cloud Engineer · April 2024 – Present",
-      "L2/L3 incident response, observability, and controlled automation"
+      "Azure Monitor, Datadog, PagerDuty, Linux diagnostics, and controlled recovery"
     ],
     "chips": [
       "Azure Monitor",
-      "AKS",
-      "Runbooks"
+      "Datadog",
+      "PagerDuty"
     ]
   },
   {
@@ -1028,7 +1075,7 @@ export const introSlides: IntroSlide[] = [
     "title": "Let’s Build Reliable Systems",
     "lines": [
       "Open to cloud engineering, DevOps, and site reliability opportunities",
-      "Based in Europe · Unrestricted Polish labour-market access"
+      "Kraków, Poland · Authorized to work in Poland"
     ],
     "chips": [
       "Kraków, Poland",
@@ -1179,3 +1226,26 @@ export const sectionMeta: Record<SectionId, { nav: string; card: string; meta: s
     }
   }
 };
+
+export const reliabilityWork = [
+  {
+    "title": "Alert engineering",
+    "detail": "Implemented Azure Monitor alert rules through the portal and infrastructure as code; configured Datadog monitors and dashboards for application and infrastructure degradation."
+  },
+  {
+    "title": "Incident management",
+    "detail": "Used PagerDuty for on-call acknowledgement, incident coordination and escalation; improved diagnostic settings, signal quality and Azure Monitor Agent heartbeat troubleshooting."
+  },
+  {
+    "title": "Azure networking diagnostics",
+    "detail": "Investigated connectivity, NSG flow logs, Traffic Analytics and DNS visibility issues using platform telemetry to narrow down fault domains."
+  },
+  {
+    "title": "AKS operations",
+    "detail": "Supported ingress, health probes, resource scaling and telemetry collection troubleshooting; integrated Prometheus and Grafana visibility."
+  },
+  {
+    "title": "Azure Update Manager",
+    "detail": "Supported patching and maintenance diagnostics and documented recovery steps for operational teams."
+  }
+];

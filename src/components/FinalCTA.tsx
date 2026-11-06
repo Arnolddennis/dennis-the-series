@@ -18,6 +18,7 @@ export default function FinalCTA({ onReplay }: { onReplay: () => void }) {
     { label: 'LinkedIn', href: profile.links.linkedin, cursor: 'link' },
     { label: 'GitHub', href: profile.links.github, cursor: 'link' },
     { label: 'Email', href: `mailto:${profile.email}`, cursor: 'link' },
+    { label: 'Call', href: `tel:${profile.phone.replace(/\s/g, '')}`, cursor: 'link' },
   ];
 
   return (
@@ -51,7 +52,7 @@ export default function FinalCTA({ onReplay }: { onReplay: () => void }) {
         <p className="mt-2 text-xs font-semibold tracking-[0.4em] text-mist sm:text-sm">{profile.role.toUpperCase()}</p>
       </motion.div>
 
-      <p className="relative mt-5 max-w-xl text-sm leading-relaxed text-mist">Cloud engineering, DevOps & site reliability opportunities. Based in Europe, with unrestricted Polish labour-market access.</p>
+      <p className="relative mt-5 max-w-xl text-sm leading-relaxed text-mist">Cloud engineering, DevOps & site reliability opportunities. {profile.location} · {profile.workAuthorization}.</p>
       <motion.div
         className="relative mt-10 flex flex-wrap justify-center gap-3"
         initial="hidden"

@@ -33,7 +33,7 @@ export default function ResumeModal({ onClose }: { onClose: () => void }) {
           <a href={profile.resumePdf} target="_blank" rel="noreferrer" className="hidden rounded-md border border-white/25 px-4 py-2 text-xs font-bold text-bone sm:inline-flex">
             Open PDF ↗
           </a>
-          <a href={profile.resumePdf} download="Dennis-David-CV.pdf" className="rounded-md bg-bone px-4 py-2 text-xs font-bold text-ink">
+          <a href={profile.resumePdf} download="Dennis_David_SRE.pdf" className="rounded-md bg-bone px-4 py-2 text-xs font-bold text-ink">
             ⤓ Download
           </a>
           <button type="button" onClick={onClose} aria-label="Close resume" data-cursor="close" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-bone hover:bg-white/20">

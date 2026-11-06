@@ -38,7 +38,7 @@ export default function Hero({ onPlay, onResume, profileId }: { onPlay: () => vo
 
   const meta = [
     '8+ Years Across IT & Engineering',
-    'Senior Cloud Engineer',
+    'Site Reliability Engineer',
     `${projects.length} Originals`,
     'Kraków, Poland',
   ];

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { achievements, certifications, education, experience, profile, projects, skillCategories } from '../data/portfolio';
+import { achievements, certifications, education, experience, profile, projects, reliabilityWork, skillCategories } from '../data/portfolio';
 import { EASE, Magnetic, SectionHeading } from './fx';
 
 /** THE FULL STORY — a designed resume preview plus view / download actions. */
@@ -38,7 +38,7 @@ export default function ResumeSection({ onView }: { onView: () => void }) {
             <Magnetic className="w-full">
               <a
                 href={profile.resumePdf}
-                download="Dennis-David-CV.pdf"
+                download="Dennis_David_SRE.pdf"
                 data-cursor="link"
                 className="glass flex min-h-12 w-full items-center justify-center gap-2 rounded-md px-6 text-[15px] font-semibold text-bone transition hover:bg-white/15"
               >
@@ -69,7 +69,7 @@ function CollapsibleSheet() {
   const [open, setOpen] = useState(false);
   return (
     <div className="relative">
-      <div className={`overflow-hidden transition-[max-height] duration-700 ease-[var(--ease-cine)] md:max-h-none ${open ? 'max-h-[4000px]' : 'max-h-[560px]'}`}>
+      <div className={`overflow-hidden transition-[max-height] duration-700 ease-[var(--ease-cine)] md:max-h-none ${open ? 'max-h-none' : 'max-h-[560px]'}`}>
         <ResumeSheet />
       </div>
       {!open && (
@@ -95,11 +95,14 @@ export function ResumeSheet() {
         <div>
           <p className="text-[10px] font-bold tracking-[0.34em] text-smoke">STARRING</p>
           <h3 className="mt-1 font-display text-[clamp(1.9rem,4.4vw,3.2rem)] leading-[0.9] tracking-wide text-bone">{profile.fullName}</h3>
+          <p className="mt-3 text-sm font-semibold text-bone">{profile.role}</p>
+          <p className="mt-1 text-xs text-mist">{profile.location} · {profile.workAuthorization}</p>
         </div>
         <div className="text-xs leading-relaxed text-mist sm:text-right">
           <a href={`mailto:${profile.email}`} className="block hover:text-bone">
             {profile.email}
           </a>
+          <a href={`tel:${profile.phone.replace(/\s/g, '')}`} className="block hover:text-bone">{profile.phone}</a>
           <a href={profile.links.linkedin} target="_blank" rel="noreferrer" className="hover:text-bone">
             LinkedIn ↗
           </a>
@@ -109,6 +112,9 @@ export function ResumeSheet() {
           </a>
         </div>
       </header>
+
+      <H>Professional Profile</H>
+      <p className="mb-7 text-sm leading-relaxed text-mist">{profile.summary}</p>
 
       <div className="grid gap-x-10 md:grid-cols-[1.4fr_1fr]">
         <div>
@@ -129,13 +135,14 @@ export function ResumeSheet() {
 
           <H>Work Experience</H>
           {experience.map((x) => (
-            <div key={x.company}>
+            <div key={x.company} className="mb-6">
               <div className="flex flex-wrap justify-between gap-x-3">
                 <p className="text-sm font-semibold text-bone">
                   {x.company} — {x.role}
                 </p>
                 <p className="text-xs text-smoke">{x.period}</p>
               </div>
+              <p className="mt-1 text-xs text-smoke">{x.place}</p>
               <ul className="mt-2 space-y-1.5">
                 {x.points.map((p) => (
                   <li key={p} className="flex gap-2 text-xs leading-relaxed text-mist">
@@ -170,6 +177,15 @@ export function ResumeSheet() {
             ))}
           </div>
 
+          <H>Production Reliability Work</H>
+          <ul className="space-y-3">
+            {reliabilityWork.map((work) => (
+              <li key={work.title} className="text-xs leading-relaxed text-mist">
+                <span className="font-semibold text-bone">{work.title}: </span>{work.detail}
+              </li>
+            ))}
+          </ul>
+
           <H>Achievements</H>
           <ul className="space-y-2">
             {achievements.map((a) => (
@@ -188,6 +204,8 @@ export function ResumeSheet() {
               .map((iss) => `${iss}: ${certifications.filter((c) => c.issuer === iss).map((c) => c.name).join(', ')}`)
               .join(' · ')}
           </p>
+          <H>Languages</H>
+          <p className="text-xs leading-relaxed text-mist">{profile.languages.join(' · ')}</p>
         </div>
       </div>
     </article>
